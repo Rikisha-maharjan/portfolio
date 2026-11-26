@@ -226,6 +226,54 @@ footer {
   font-size: 0.95rem;
 }
 
+/* ---------- LANGUAGES ---------- */
+.about-text .languages { color: var(--ink); margin-top: 1.2rem; }
+
+
+/* ---------- MENU ---------- */
+html { scroll-padding-top: 5rem; }
+
+.nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  padding: 0.9rem 1.5rem;
+  background: rgba(251, 247, 244, 0.92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--lavender);
+}
+
+.nav-name {
+  font-family: var(--heading-font);
+  font-weight: 600;
+  font-size: 1.15rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.nav nav { display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; }
+
+.nav nav a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.nav nav a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+  text-decoration-color: var(--blush);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+
 /* ---------- PHONES ---------- */
 @media (max-width: 700px) {
   .hero { grid-template-columns: 1fr; text-align: center; }
@@ -239,4 +287,5 @@ footer {
   .contact { margin: 2rem 1.5rem 0; }
   .card-body { padding: 1.2rem; }
   .shots { padding: 0.8rem 1.2rem 0; }
+  .nav { justify-content: center; text-align: center; 
 }
